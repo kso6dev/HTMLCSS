@@ -1,0 +1,19 @@
+/* 
+un premier fichier de style
+----------
+par k.so.6.dev
+*/
+
+p
+{
+    color: blue;
+}
+
+h1, strong
+{
+    color: forestgreen; /* stylé le forestgreen */
+}
+em
+{
+    color: goldenrod;
+}
