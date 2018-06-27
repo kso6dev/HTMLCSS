@@ -1,5 +1,5 @@
 /* 
-un premier fichier de style
+un fichier de style copié du premier style.css
 ----------
 par k.so.6.dev
 */
@@ -11,8 +11,9 @@ body
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: top right;
-    */
     background: url("images/dessin.png") fixed no-repeat top right, url("images/photo_montagne.jpg") center no-repeat fixed;
+
+    */
 
 }
 p
@@ -21,7 +22,29 @@ p
     box-shadow: 6px 6px 6px black;
     text-shadow: 2px 2px 2px black;
 }
-
+a
+{
+    text-decoration: underline;
+    color: red;
+    font-style: italic;
+}
+a:hover /* au survol */
+{
+    text-shadow: 3px 3px 5px;
+    /* color: pink; */
+}
+a:active /* au clic */
+{
+    background-color: green;
+}
+a:focus /* sélectionné */
+{
+    background-color: pink;
+}
+a:visited /* lien déjà consulté */
+{
+    color: purple;
+}
 .opac
 {
     opacity: 0.3;

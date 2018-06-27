@@ -5,7 +5,16 @@ utilisé pour styliser mon CV en ligne
 créé par k.so.6.dev le 25/06/2018
 */
 
-
+body
+{
+    background-color: rgb(63, 90, 180); /* background color du body donc de toute la page */
+    color: white;
+}
+mark
+{
+    background-color: yellow;
+    color: black;
+}
 h2
 {
     color: blue;
@@ -29,4 +38,98 @@ h2
 #photo
 {
     color: yellow;
+}
+
+.ville
+{
+    color: brown;
+}
+
+.divheader
+{
+    color: rgb(122,22,333);
+    font-weight: bold;
+    text-align: justify;
+}
+
+* /* selecteur universel = toutes les balises */
+{
+
+    font: 200;
+}
+
+h2 strong /* une balise contenue dans une autre */
+{
+    color: #B77;
+}
+
+h2 + li /* première balise li après une h2 */
+{
+    font: 300;
+}
+
+a[title] /* toutes balises a avec l'attribut title*/
+{
+    font: 400;
+}
+a[title="Cliquez ici"] /* toutes balises a avec attribut title qui a pour valeur "Cliquez ici" */
+{
+    color: rebeccapurple;
+}
+a[title*="ici"] /* avec valeur d'attribut contenant "ici" */
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1
+{
+    /*font-size: 40px; /* Titres de 40 pixels */
+
+    /*font-size: xx-small; /* minuscule */
+    /*font-size: x-small; /* très petit */
+    /*font-size: small; /* petit */
+    /*font-size: medium; /* moyen */
+    /*font-size: large; /* grand */
+    /*font-size: x-large; /* très grand */
+    font-size: xx-large; /* énorme */
+    text-decoration: blink; /* clignotte (marche pas)*/
+}
+
+p
+{
+    /*font-size: 16px; /* paragraphes de 16 pixels */
+    font-size: 1.3em; /* <1 pour réduire, >1 pour augmenter */
+    font-family: 'Times New Roman', Times, serif /* pour la police, si première pas installée chez user c'est la 2è sinon la 3è, sachant que serif est partout */
+
+}
+
+@font-face{
+    font-family: 'cac_champagne-webfont';
+    src: url('webfonts/cacchampagne_regular_macroman/cac_champagne-webfont.eot') format('eot'),
+    url('webfonts/cacchampagne_regular_macroman/cac_champagne-webfont.svg') format('eog'),
+    url('webfonts/cacchampagne_regular_macroman/cac_champagne-webfont.ttf') format('ttf'),
+    url('webfonts/cacchampagne_regular_macroman/cac_champagne-webfont.woff') format('woff');
+}
+
+li
+{
+    font-family: 'cac_champagne-webfont', 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    font-style: normal;
+}
+
+.souligne
+{
+    text-decoration: underline; /*souligner balises avec attr class="souligne" */
+}
+
+.imgfloat
+{
+    float: left; /* faire flotter a gauche du texte */
+    /*float: right; /* faire flotter a droite du texte */
+}
+
+.sousrobot
+{
+    clear: both; /* pour arrêter le float */
 }

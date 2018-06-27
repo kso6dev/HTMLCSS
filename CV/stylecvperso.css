@@ -5,7 +5,62 @@ utilisé pour styliser mon CV en ligne
 créé par k.so.6.dev le 25/06/2018
 */
 
-h1
+@font-face{
+    font-family: 'Cadman_Roman-webfont';
+    src: url("font/web_fonts/cadman_regular_macroman/Cadman_Roman-webfont.eot") format("eot"),
+    url("font/web_fonts/cadman_regular_macroman/Cadman_Roman-webfont.svg") format("svg"),
+    url("font/web_fonts/cadman_regular_macroman/Cadman_Roman-webfont.ttf") format("ttf"),
+    url("font/web_fonts/cadman_regular_macroman/Cadman_Roman-webfont.woff") format("woff");
+}
+body
 {
-    color: blue;
+    margin-left: 220px;
+    background: url("images/LeftCV.png") top left fixed no-repeat;
+    background-color: rgb(6, 73, 82);
+    background-color: rgba(6, 73, 82, 0.822);
+    color: white;
+    text-shadow: 1px 1px 1px  rgb(33, 40, 105);
+    text-align: justify;
+    font-family: 'Cadman_Roman-webfont', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback', serif;
+}
+h2
+{
+    /*background-color: rgb(146, 151, 223);*/
+    text-align: center;
+}
+#photo
+{
+    border-radius: 200px 200px 200px 200px;
+    border: 1px solid rgb(43, 53, 145);
+    box-shadow: 2px 2px 2px  rgb(35, 41, 99);
+}
+
+.hyperlink
+{
+    color: white;
+    font-style: italic;   
+}
+.hyperlink:visited
+{
+    color: white;
+    font-style: italic;
+}
+.citation
+{
+    font-style: italic;
+}
+h3
+{
+    color: rgb(134, 241, 134);
+}
+h4, strong
+{
+    color: rgb(109, 240, 159);
+}
+mark
+{
+    background-color: rgb(6, 73, 82);
+    background-color: rgba(6, 73, 82, 0);
+    color: white;
+    text-shadow: 1px 1px 1px  rgb(33, 40, 105);
 }

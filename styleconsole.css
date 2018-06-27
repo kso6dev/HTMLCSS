@@ -1,0 +1,22 @@
+/*
+styleconsole.css
+utilisé pour styliser ma page console
+----------
+créé par k.so.6.dev le 26/06/2018
+*/
+
+body
+{
+    background-color: black;
+    color: #30F74B;
+}
+
+.prompt
+{
+    color: #8AE234;
+}
+
+.blue
+{
+    color: #729FCF;
+}
