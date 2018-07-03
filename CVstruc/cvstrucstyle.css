@@ -1,0 +1,126 @@
+/* style file to structure new CV
+created on 03/07/2018 by Chaut Benjamin */
+
+/* fonts */
+@font-face{
+    font-family: 'Cadman_Roman-webfont';
+    src: url("font/web_fonts/cadman_regular_macroman/Cadman_Roman-webfont.eot") format("eot"),
+    url("font/web_fonts/cadman_regular_macroman/Cadman_Roman-webfont.svg") format("svg"),
+    url("font/web_fonts/cadman_regular_macroman/Cadman_Roman-webfont.ttf") format("ttf"),
+    url("font/web_fonts/cadman_regular_macroman/Cadman_Roman-webfont.woff") format("woff");
+}
+
+/* Main element of the page */
+body
+{
+    font-family: 'Cadman_Roman-webfont', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+    margin: 0px;
+    margin-right: 20px;
+    background-color: rgb(2, 44, 49);
+    background-color: rgba(0, 50, 56, 0.822);
+    color: white;
+    text-shadow: 1px 1px 1px  rgb(33, 105, 69);
+    text-align: justify;
+}
+#main_wrapper
+{
+    display: flex;
+    flex-direction: row;
+}
+#left_banner
+{
+    display: flex;
+    background-color: black;
+    width: 180px;
+    background: url("images/LeftCV.png") no-repeat fixed;
+}
+#cv_content
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+header
+{
+    display: flex;
+    flex-direction: line;
+}
+header a
+{
+    color: white;
+    font-style: italic;  
+}
+header a:visited
+{
+    color: white;
+    font-style: italic;  
+}
+
+header img
+{
+    border-radius: 200px;
+    border: 1px solid rgb(43, 145, 94);
+    box-shadow: 2px 2px 2px  rgb(35, 99, 49);
+}
+#contact
+{
+    font-size: 0.9em;
+    text-align: center;
+}
+#titles
+{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-left: 50px;
+    margin: auto;
+}
+#titles h1, #titles h2
+{
+    text-align: center;
+}
+section
+{
+    display: flex;
+    flex-direction: column;
+}
+.citation
+{
+    font-style: italic;
+}
+#cv
+{
+    display: flex;
+    flex-direction: line;
+}
+#experience
+{
+    flex: 3;
+}
+#skills
+{
+    flex: 2;
+    padding-left: 20px;
+}
+
+#trainings
+{
+    flex: 3;
+}
+
+h3
+{
+    color: rgb(134, 241, 134);
+}
+h4, strong
+{
+    color: rgb(109, 240, 159);
+}
+mark
+{
+    background-color: rgb(6, 73, 82);
+    background-color: rgba(6, 73, 82, 0);
+    color: white;
+    text-shadow: 1px 1px 1px  rgb(33, 40, 105);
+}
