@@ -262,3 +262,89 @@ footer h1
     text-decoration: none;
     color: #760001;
 }
+
+@media all and (max-width: 920px)
+{
+    /* we remove defined width to fit page width */
+    #main_wrapper
+    {
+        width: auto;
+        /* so we wont have a scroll bar even
+        if we go under 900px */
+    }
+
+    /* Display top Navigation menu in col instead of line*/
+    nav
+    {
+        width: auto;
+        text-align: left;
+        /* we put back again auto width and
+        we align text to left to gain place */
+    }
+    nav ul
+    {
+        flex-direction: column;
+        /* nav menu will go in column */
+    }
+    nav li 
+    {
+        padding-left: 4px;
+        /* go left to gain place */
+    }
+    nav a
+    {
+        font-size: 1.1em;
+        /* reduce font size to gain place */
+    }
+    nav a:hover
+    {
+        border-bottom: 0;
+        /* remove border which initially
+        appeared when hover, TO GAIN PLACE */ 
+    }
+    /* Remove Banner */
+    #picture_banner
+    {
+        display: none;
+        /* WARNING: use display: none instead
+        of visibility: hidden because when 
+        hidden, it still keep the place */
+    }
+
+    /* move aside under article */
+    section
+    {
+        flex-direction: column;
+        /* section was initially in line (default)
+        so aside was placed aside the articles
+        so we put it in column to put aside downside */
+    }
+    article, aside
+    {
+        width: auto;
+        margin-bottom: 15px;
+        /* auto width and reduce margin to gain place */
+    }
+    #bubble_arrow
+    {
+       display: none;
+       /* remove arrow next to aside */
+    }
+    #zozor_picture img
+    {
+        width: 100px;
+        float: right;
+        margin-left: 15px;
+        /* reduce picture and show it as a float */
+    }
+    aside p:last-child
+    {
+        text-align: center;
+        /* we align the text of the last p in aside
+        so the last paragraph in aside 
+        so it is the paragraph with pictures for
+        social media */
+    }
+
+
+}

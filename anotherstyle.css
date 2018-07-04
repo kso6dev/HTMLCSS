@@ -1,0 +1,44 @@
+/* tester en redimensionnant la page anotherpage.html
+attention, elle prend 2 feuilles de style! */
+
+body
+{
+    color: blue;
+}
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px */
+@media screen and (max-width: 1280px)
+{
+    body
+    {
+        color: red;
+    }
+}
+
+/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
+@media all and (min-width: 1024px) and (max-width: 1280px)
+{
+    body
+    {
+        color: green;
+    }
+}
+
+/* Sur les téléviseurs */
+@media tv
+{
+    body
+    {
+        color: black;
+    }
+
+}
+
+/* Sur tous types d'écrans orientés verticalement */
+@media all and (orientation: portrait)
+{
+    body
+    {
+        color: yellow;
+    }
+}

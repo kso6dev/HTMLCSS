@@ -3,6 +3,10 @@
     <head>
         <!-- Page header -->
         <meta charset="utf-8" />
+        <link rel="stylesheet" href="anotherstyle.css" />
+        <link rel="stylesheet" media="screen and (max-width: 1024px)" href="stylesmall.css" />
+        <!-- 2 feuilles de style param
+        tester en agrandissant et réduisant la fenetre internet... -->
         <title>HTML et CSS</title>
     </head>
     
@@ -43,6 +47,19 @@
            <img src="images/logo_firefox.png" alt="logo firefox" title="le logo de Firefox" />
            <figcaption>Logos de navigateurs</figcaption>
        </figure>
+
+       <section>
+           <article>
+               <p>
+                   ici on va tester du audio
+               </p>
+               <audio src="music/beyonce_formation.mp3" controls item-width="500" loop preload="none"></audio>
+           </article>
+           <article>
+               <p>et ici de la vidéo</p>
+               <video src="video/freejump.MP4" controls width="600" preload="none"></video>
+           </article>
+       </section>
     </body>
 
 </html>
